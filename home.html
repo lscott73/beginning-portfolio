@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> lucy scott </title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.typekit.net/zzj8mxo.css">
+		<script src="js1.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	</head>
+	<body>
+			<nav>
+				<div class="header">
+					<h1> lucy scott </h1>
+				</div>
+				<div class="navbar">
+					<ul>
+						<li><a href="home.html">home</a></li>
+						<li><a href="work.html">work</a></li>
+						<li><a href="connect.html">connect</a></li>
+						<li><a href="about.html">about</a></li>
+					  </ul>
+				</div>
+			</nav>
+
+
+
+	<div class = "parent-container">
+		<div class= "flex-container2">
+			<img src="catCircleFinal.png" style="width:600px;height:600px;" id="responsive-image">
+
+   		</div>
+
+		<div class="flex-container">
+			<div id="text-container"></div>
+
+			<script>
+			  const text = "Hi! I'm Lucy, a second year computational media major at Georgia Tech!";
+			  const textContainer = document.getElementById('text-container');
+			  const cursor = document.getElementById('cursor');
+			  let index = 0;
+
+			function typeText() {
+      			if (index < text.length) {
+        			textContainer.textContent += text.charAt(index);
+        			index++;
+        			setTimeout(typeText, 100);
+    		}
+			}
+			  typeText();
+			</script>
+
+		<div id="aboutMe2">
+		My specific interest is in user-centered digital product design.
+		</div>
+		<div id="aboutMe3">
+		I have experience with HTML, CSS, Javascript, OOP (Java), and basic UX research - see my work tab for more!
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
